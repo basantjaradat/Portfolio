@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/home.css";
 import projects from "../data/projects";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
