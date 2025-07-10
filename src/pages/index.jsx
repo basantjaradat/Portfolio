@@ -18,8 +18,8 @@ export default function Home() {
           <Link href="/about">ABOUT ME</Link>   
           <Link href="/contact">CONTACT</Link>
         </div>
-        <a className="download" href="#cv">
-          Download CV
+        <a className="download" href="/basant-jaradat-CV.pdf" download>
+            Download CV
         </a>
       </div>
 
@@ -37,22 +37,21 @@ export default function Home() {
         </div>
 
         <div className="skills-card">
-          <h4>Skills</h4>
-          <br />
-          <br />
-          <span className="skills-icon">
-            <i className="far fa-user"><FontAwesomeIcon icon={faUser} /></i>
-          </span>
-          <ul>
-            <li style={{ color: "green" }}>Analysis</li>
-            <li style={{ color: "red" }}>Speaking</li>
-            <li style={{ color: "#f57c00" }}>Manage</li>
-            <li style={{ color: "blue" }}>Teamwork</li>
+          <div className="skills-header">
+            <h4>Skills</h4>
+            <div className="skills-icon">
+              <FontAwesomeIcon icon={faUser} />
+            </div>
+          </div>
+          <ul className="skills-list">
+            <li style={{ color: "green" }}>Teamwork</li>
+            <li style={{ color: "red" }}>Leadership</li>
+            <li style={{ color: "#f57c00" }}>Communication</li>
+            <li style={{ color: "blue" }}> Time Management</li>
             <li style={{ color: "purple" }}>Problem Solving</li>
-            <li style={{ color: "brown" }}>Leadership</li>
+            <li style={{ color: "brown" }}>Continuous Learning</li>
           </ul>
         </div>
-
         <div className="exp-card">
           <span className="bag-icon">
             <i className="fas fa-shopping-bag"><FontAwesomeIcon icon={faShoppingBag} /></i>
