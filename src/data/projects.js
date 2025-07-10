@@ -16,7 +16,7 @@ const projects = [{
         description: "This is online learning platform developed during my internship at Aqlama Company. The platform allows students to explore and access recent projects, while instructors and admins can manage projects, users, and content through a dedicated dashboard.",
         image: "../images/unlogy.png",
         technologies: ["TypeScript", "CSS", "JavaScript", "react"],
-        demo: "https://mohammad-shaikh-ibrahim.github.io/BALLARD_DESGIN-By-Alpha-Omega/",
+        demo: "",
         github: "https://github.com/basantjaradat/unlogy",
     },
 
