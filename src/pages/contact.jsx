@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="responsive-container">
         <div className="navbar-box">
         <span>BASANT JARADAT PORTFOLIO</span>
         <div className="menu">
