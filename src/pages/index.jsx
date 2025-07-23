@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Home() {
 
   return (
-    <div className="responsive-container">
+    <div >
       <div className="navbar-box">
         <span>BASANT JARADAT PORTFOLIO</span>
         <div className="menu">
