@@ -439,30 +439,23 @@ body {
     height: 14rem;
   }
 }
-
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
   justify-items: center;
   align-items: start;
 }
 
-/* Remove manual grid positioning to allow natural flow */
+/* Remove fixed grid positioning from all cards */
 .hi-card,
-.exp-card,
 .profile-card,
-.skills-card,
-.ed-card {
-  grid-column: auto;
+.exp-card,
+.ed-card,
+.skills-card {
+  margin: 0;         /* Remove margin that breaks layout */
+  grid-column: auto; /* Allow natural grid placement */
   grid-row: auto;
 }
 
-/* Responsive single-column layout on smaller screens */
-@media (max-width: 768px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-  }
-}
