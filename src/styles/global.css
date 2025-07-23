@@ -1,6 +1,8 @@
+/* src/styles/global.css */
+
 html {
-  font-size: 16px;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *::before, *::after {
@@ -10,19 +12,41 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
-  padding: 1rem;
-  background: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
+/* Images scale properly */
 img {
   max-width: 100%;
   height: auto;
 }
 
-.global-container {
+/* Responsive typography */
+h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Utility container class you can use freely */
+.responsive-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+/* Flex helper (optional) */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
