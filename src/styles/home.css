@@ -22,7 +22,6 @@ body {
     border-radius: 12px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
-    padding: 1.5rem;
     width: 24rem;
     height: 11.5rem;
     border-bottom: 6px solid black;
@@ -95,7 +94,6 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     border-bottom: 6px solid black;
-    padding: 1.5rem;
     width: 24rem;
     height: 15rem;
     text-align: left;
@@ -138,7 +136,7 @@ body {
     column-count: 2;
     column-gap: 1.5rem;
     font-size: 1rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .skills-list li {
@@ -162,7 +160,6 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     border-bottom: 6px solid black;
-    padding: 1.5rem;
     width: 24rem;
     height: 15rem;
     text-align: left;
@@ -199,7 +196,6 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     border-bottom: 6px solid black;
-    padding: 1.5rem;
     width: 24rem;
     height: 15rem;
     text-align: left;
@@ -241,7 +237,7 @@ body {
     padding: 0.5rem 1rem;
     max-width: 20rem;
     height: 3.5rem;
-    margin-left: 37rem;
+    margin-left: 34rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
 }
