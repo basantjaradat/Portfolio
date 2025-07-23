@@ -115,22 +115,6 @@ h2 {
 /* ================= */
 
 @media (max-width: 1200px) {
-    .navbar-box {
-        max-width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
-
-    .navbar-box .menu {
-        margin-right: 0;
-        margin-top: 0.5rem;
-        width: 100%;
-        text-align: center;
-    }
-
     .profile-container {
         margin-left: auto;
         margin-right: auto;
@@ -154,28 +138,6 @@ h2 {
 @media (max-width: 768px) {
     body {
         padding: 1rem;
-    }
-
-    .navbar-box {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 1rem 0.5rem;
-        border-radius: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navbar-box a {
-        margin: 0.3rem 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    .navbar-box .menu {
-        margin-right: 0;
-        width: 100%;
-        text-align: left;
-        margin-top: 0.5rem;
     }
 
     .profile-container {
@@ -203,32 +165,9 @@ h2 {
         gap: 1rem;
     }
 
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .footer-icons {
-        margin-top: 0.5rem;
-    }
-}
-
 @media (max-width: 480px) {
     h2 {
         font-size: 1.25rem;
-    }
-
-    .navbar-box {
-        border-radius: 1.5rem;
-        padding: 0.75rem 1rem;
-    }
-
-    .navbar-box a {
-        font-size: 0.85rem;
-        margin: 0 0.3rem;
     }
 
     .about-text {
@@ -245,13 +184,4 @@ h2 {
         font-size: 0.65rem;
     }
 
-    .footer {
-        font-size: 0.85rem;
-        padding: 0.8rem 1rem;
-    }
-
-    .footer-icons a {
-        font-size: 1rem;
-        margin-left: 0.5rem;
-    }
 }
