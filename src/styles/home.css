@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,21 +18,32 @@ body {
     justify-content: center;
 }
 
-.hi-card {
-    background-color: rgba(255, 255, 255, 0.2);
+.hi-card,
+.profile-card,
+.skills-card,
+.exp-card,
+.ed-card {
     border-radius: 12px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
-    padding: 1.5rem;
-    width: 24rem;
-    height: 11.5rem;
     border-bottom: 6px solid black;
-    text-align: left;
+    padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1rem;
 }
 
-.hi-card:hover {
+.hi-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+    text-align: left;
+}
+
+.hi-card:hover,
+.profile-card:hover,
+.skills-card:hover,
+.exp-card:hover,
+.ed-card:hover {
     transform: translateY(-8px);
     box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.35);
 }
@@ -41,75 +51,38 @@ body {
 .profile-card {
     position: relative;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-    border-bottom: 6px solid black;
-    padding: 1.5rem;
-    width: 29rem;
+    width: 100%;
+    max-width: 29rem;
     height: 32rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1.3rem;
-    z-index: 1;
     background-image: url("/images/download.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-}
-
-.heart-icon {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: black;
-    color: #fff;
-    font-size: 1.8rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.profile-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.35);
+    z-index: 1;
 }
 
 .profile-img {
     width: 100%;
     height: 30rem;
-    background-color: rgba(255, 255, 255, 0.0);
     border-radius: 12px;
-    margin-bottom: 1rem;
     position: absolute;
-    margin-top: 0.1rem;
-    margin-left: -14.2rem;
+    top: 0.1rem;
+    left: 0;
     z-index: 0;
 }
 
-.skills-card {
-    position: relative;
-    background-color: #9ACBD2;
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-    border-bottom: 6px solid black;
-    padding: 1.5rem;
-    width: 24rem;
-    height: 15rem;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1.3rem;
+.skills-card,
+.exp-card,
+.ed-card {
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+    margin: 1rem auto;
 }
 
-.skills-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+.skills-card {
+    background-color: #9ACBD2;
 }
 
 .skills-header {
@@ -119,7 +92,10 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.skills-icon {
+.skills-icon,
+.heart-icon,
+.bag-icon,
+.cap-icon {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -139,7 +115,6 @@ body {
 .skills-list {
     list-style: none;
     padding: 0;
-    margin: 0;
     column-count: 2;
     column-gap: 1.5rem;
     font-size: 1rem;
@@ -148,8 +123,8 @@ body {
 
 .skills-list li {
     margin-bottom: 1rem;
-    position: relative;
     padding-left: 1rem;
+    position: relative;
 }
 
 .skills-list li::before {
@@ -161,88 +136,19 @@ body {
 }
 
 .exp-card {
-    position: relative;
     background-color: #F2C067;
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-    border-bottom: 6px solid black;
-    padding: 1.5rem;
-    width: 24rem;
-    height: 15rem;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-right: 31rem;
-    margin-top: -16.3rem;
-    margin-left: 1rem;
     color: #fff;
-}
-
-.bag-icon {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: black;
-    color: #fff;
-    font-size: 1.8rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.exp-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.35);
 }
 
 .ed-card {
-    position: relative;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-    border-bottom: 6px solid black;
-    padding: 1.5rem;
-    width: 24rem;
-    height: 15rem;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 2.5rem;
-    margin-top: -16rem;
-}
-
-.cap-icon {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: black;
-    color: #fff;
-    font-size: 1.8rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.ed-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.35);
 }
 
 .search-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid black;
@@ -251,15 +157,11 @@ body {
     padding: 0.5rem 1rem;
     max-width: 20rem;
     height: 3.5rem;
-    margin-left: 37rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
 }
 
 .search-box h1 {
     border: none;
     background: none;
-    margin-left: 1rem;
     width: 100%;
 }
 
@@ -272,8 +174,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
     padding: 2rem;
-    margin-left: 6rem;
-    margin-bottom: 4rem;
 }
 
 .project-card {
@@ -287,7 +187,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease;
-    width: 35rem;
+    width: 100%;
+    max-width: 35rem;
+    margin: auto;
 }
 
 .project-card:hover {
@@ -364,122 +266,31 @@ body {
     color: #fff;
 }
 
-/* ================= */
-/* Responsive Styles */
-/* ================= */
-
-@media (max-width: 1200px) {
-  .container {
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .hi-card,
-  .skills-card,
-  .exp-card,
-  .ed-card,
-  .profile-card {
-    width: 100%;
-    max-width: 28rem;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    height: auto !important;
-    margin-top: 1rem !important;
-  }
-
-  .exp-card,
-  .ed-card {
-    margin-top: 1rem !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-
-  .search-box {
-    max-width: 95vw;
-    margin-left: auto !important;
-    margin-top: 1rem;
-  }
-
-  .project-section {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding: 1rem;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 32rem;
-  }
-}
-
 @media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-  .container {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .container,
+    .project-section {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .hi-card,
-  .skills-card,
-  .exp-card,
-  .ed-card,
-  .profile-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    height: auto !important;
-  }
+    .search-box,
+    .project-card,
+    .hi-card,
+    .profile-card,
+    .skills-card,
+    .exp-card,
+    .ed-card {
+        margin: 1rem auto;
+        width: 90%;
+    }
 
-  .search-box {
-    max-width: 100%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+    .profile-img {
+        height: auto;
+        position: relative;
+    }
 
-  .project-section {
-    grid-template-columns: 1fr !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding: 0.5rem;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .project-image {
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  h1, .project-title {
-    font-size: 1.1rem;
-  }
-  .search-box {
-    font-size: 0.9rem;
-  }
-
-  .hi-card,
-  .skills-card,
-  .exp-card,
-  .ed-card,
-  .profile-card {
-    padding: 1rem !important;
-  }
-
-  .tag,
-  .tech-tag {
-    font-size: 0.65rem;
-    padding: 0.25rem 0.5rem;
-  }
-
-  .btn {
-    font-size: 0.85rem;
-    padding: 0.4rem 1rem;
-  }
+    .skills-list {
+        column-count: 1;
+    }
 }
