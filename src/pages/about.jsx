@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/navbar.";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 import { profileData } from "../data/profile";
 
 const About = () => {
