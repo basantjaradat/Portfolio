@@ -70,7 +70,7 @@ export default function Home() {
           <h3>Computer Systems Engineering</h3>
         </div>
       </div>
-
+       </div>
       <div className="search-box">
         🔍
         <h1>Basant Jaradat</h1>
@@ -94,7 +94,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-        </div>
 
       <Footer />
     </div>
