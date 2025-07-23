@@ -5,7 +5,6 @@ import { faShoppingBag, faGraduationCap } from "@fortawesome/free-solid-svg-icon
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
-import "../styles/home.css";
 
 export default function Home() {
   return (
