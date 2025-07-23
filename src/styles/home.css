@@ -433,21 +433,21 @@ body {
 }
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  justify-items: center;
+  justify-content: center;
   align-items: start;
 }
 
-/* Remove fixed grid positioning from all cards */
+
 .hi-card,
 .profile-card,
 .exp-card,
 .ed-card,
 .skills-card {
-  margin: 0;         /* Remove margin that breaks layout */
-  grid-column: auto; /* Allow natural grid placement */
-  grid-row: auto;
+  /* Don't set grid-column or grid-row */
+  margin: 0 auto;
+  max-width: 100%;
 }
 
