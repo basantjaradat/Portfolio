@@ -164,6 +164,7 @@ h2 {
         flex-direction: column;
         gap: 1rem;
     }
+} /* <-- closing brace added here */
 
 @media (max-width: 480px) {
     h2 {
@@ -183,5 +184,4 @@ h2 {
     .level {
         font-size: 0.65rem;
     }
-
 }
