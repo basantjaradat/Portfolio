@@ -433,21 +433,36 @@ body {
 }
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: center;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-
-.hi-card,
-.profile-card,
-.exp-card,
-.ed-card,
-.skills-card {
-  /* Don't set grid-column or grid-row */
-  margin: 0 auto;
-  max-width: 100%;
+.card-grid .hi-card {
+  grid-column: 1;
+  grid-row: 1;
 }
+
+.card-grid .exp-card {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.card-grid .profile-card {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.card-grid .skills-card {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.card-grid .ed-card {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 
