@@ -28,7 +28,6 @@ body {
     border-bottom: 6px solid black;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1rem;
 }
 
 .hi-card:hover {
@@ -48,7 +47,6 @@ body {
     height: 32rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1.3rem;
     z-index: 1;
     background-image: url("/images/download.jpg");
     background-size: cover;
@@ -102,7 +100,6 @@ body {
     height: 15rem;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1.3rem;
 }
 
 .skills-card:hover {
@@ -170,9 +167,6 @@ body {
     height: 15rem;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-right: 31rem;
-    margin-top: -16.3rem;
-    margin-left: 1rem;
     color: #fff;
 }
 
@@ -210,8 +204,6 @@ body {
     height: 15rem;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 2.5rem;
-    margin-top: -16rem;
 }
 
 .cap-icon {
