@@ -50,9 +50,9 @@ const Navbar = () => {
       <div className="navbar-box">
         <span>BASANT JARADAT PORTFOLIO</span>
         <div className="menu">
-          <Link href="/"><a>HOME</a></Link>
-          <Link href="/about"><a>ABOUT ME</a></Link>
-          <Link href="/contact"><a>CONTACT</a></Link>
+          <Link href="/">HOME</Link>
+          <Link href="/about">ABOUT ME</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
         <a className="download" href="/basant-jaradat-CV.pdf" download>
           Download CV
