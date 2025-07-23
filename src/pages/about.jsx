@@ -10,7 +10,7 @@ const About = () => {
   const { about, education, experience, skills, languages } = profileData;
 
   return (
-    <div>
+    <div className="responsive-container">
       <div className="navbar-box">
         <span>BASANT JARADAT PORTFOLIO</span>
         <div className="menu">
