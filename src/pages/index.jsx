@@ -12,6 +12,7 @@ export default function Home() {
       <Navbar />
 
       <div className="container">
+        <div className="card-grid">
         <div className="hi-card">
           <h1>
             Hi, I'm Basant<br /> Taher Jaradat 👋
@@ -93,6 +94,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+        </div>
 
       <Footer />
     </div>
