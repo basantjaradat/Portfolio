@@ -17,41 +17,6 @@ body {
     gap: 1rem;
     justify-content: center;
 }
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.card-grid .hi-card {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.card-grid .exp-card {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.card-grid .profile-card {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 2;
-}
-
-.card-grid .skills-card {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.card-grid .ed-card {
-  grid-column: 3;
-  grid-row: 2;
-}
-
 .hi-card {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -474,4 +439,58 @@ body {
     height: 14rem;
   }
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem;
+}
+
+/* Position cards in the grid layout */
+.hi-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.exp-card {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.profile-card {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.skills-card {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.ed-card {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Responsive single-column on smaller screens */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    justify-items: stretch;
+  }
+
+  .hi-card,
+  .exp-card,
+  .profile-card,
+  .skills-card,
+  .ed-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
 
