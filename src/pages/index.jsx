@@ -28,9 +28,9 @@ export default function Home() {
         <div className="skills-card">
           <div className="skills-header">
             <h4>Skills</h4>
-            <div className="skills-icon">
+            <span className="skills-icon">
               <FontAwesomeIcon icon={faUser} />
-            </div>
+            </span>
           </div>
           <ul className="skills-list">
             <li style={{ color: "green" }}>Teamwork</li>
@@ -48,7 +48,6 @@ export default function Home() {
           </span>
           <h4>Experience</h4>
           <br />
-          <br />
           <h1>
             <strong>Aqlama Company</strong>
           </h1>
@@ -62,7 +61,6 @@ export default function Home() {
             <FontAwesomeIcon icon={faGraduationCap} />
           </span>
           <h4>Education</h4>
-          <br />
           <br />
           <h1>
             <strong>Arab American University</strong>
