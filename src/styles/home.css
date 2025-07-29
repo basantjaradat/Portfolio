@@ -27,6 +27,7 @@ body {
     border-bottom: 6px solid black;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:1.5rem;
 }
 
 .hi-card:hover {
