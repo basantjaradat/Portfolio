@@ -1,4 +1,3 @@
-//EDIT
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +8,7 @@ const Footer = () => {
     <>
       <style jsx>{`
         .footer {
+          width: 100%;
           background-color: #ffe6c2;
           padding: 1rem 2rem;
           display: flex;
@@ -17,7 +17,7 @@ const Footer = () => {
           gap: 0.5rem;
           font-family: 'Nunito', sans-serif;
           font-size: 0.95rem;
-          margin-top: 2rem;
+          position: relative;
         }
 
         @media (min-width: 768px) {
