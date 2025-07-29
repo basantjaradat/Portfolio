@@ -17,7 +17,6 @@ export default function Home() {
           <h1>
             Hi, I'm Basant<br /> Taher Jaradat 👋
           </h1>
-          <br />
           <h4>Front End Engineer</h4>
         </div>
 
