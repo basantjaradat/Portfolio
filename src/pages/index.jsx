@@ -26,12 +26,11 @@ export default function Home() {
         </div>
 
         <div className="skills-card">
-          <div className="skills-header">
-            <h4>Skills</h4>
             <span className="skills-icon">
               <FontAwesomeIcon icon={faUser} />
             </span>
-          </div>
+           <h4>Skills</h4>
+           <br />
           <ul className="skills-list">
             <li style={{ color: "green" }}>Teamwork</li>
             <li style={{ color: "red" }}>Leadership</li>
