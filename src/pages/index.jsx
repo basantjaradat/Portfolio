@@ -30,7 +30,6 @@ export default function Home() {
               <FontAwesomeIcon icon={faUser} />
             </span>
            <h4>Skills</h4>
-           <br />
           <ul className="skills-list">
             <li style={{ color: "green" }}>Teamwork</li>
             <li style={{ color: "red" }}>Leadership</li>
