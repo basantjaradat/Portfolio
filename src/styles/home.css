@@ -98,6 +98,7 @@ body {
     height: 15rem;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:1.5rem;
 }
 
 .skills-card:hover {
@@ -165,6 +166,8 @@ body {
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #fff;
+    padding:1.5rem;
+
 }
 
 .bag-icon {
@@ -200,6 +203,7 @@ body {
     height: 15rem;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:1.5rem;
 }
 
 .cap-icon {
