@@ -1,19 +1,19 @@
 import React from "react";
 import Footer from "./Footer";
-import Navbar from "./Navbar"; // if you use it
+import Navbar from "./Navbar"; 
 
 const Layout = ({ children }) => {
   return (
     <div className="layout-wrapper">
-      {/* Optional Navbar */}
       <Navbar />
 
-      <div className="container">
-        <main className="layout-content">
+      <main className="layout-content">
+        <div className="container">
           {children}
-        </main>
-        <Footer />
-      </div>
+        </div>
+      </main>
+
+      <Footer />
 
       <style jsx global>{`
         html, body, #__next {
@@ -28,18 +28,18 @@ const Layout = ({ children }) => {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
+        }
+
+        .layout-content {
+          flex: 1;
           width: 100%;
         }
 
         .container {
           max-width: 1200px;
           margin: 0 auto;
-          width: 100%;
           padding: 2rem 1rem;
-        }
-
-        .layout-content {
-          flex: 1;
+          width: 100%;
         }
       `}</style>
     </div>
