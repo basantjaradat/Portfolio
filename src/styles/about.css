@@ -2,9 +2,6 @@ body {
     background: #fef3e7;
     padding: 2rem;
     color: #333;
-    /* Add a max-width and center content */
-    max-width: 90vw;
-    margin: 0 auto;
 }
 /* Profile container grid */
 .profile-container {
