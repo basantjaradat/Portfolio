@@ -3,70 +3,66 @@ import projects from "../data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
-
+import Navbar from "../components/Navbar";
+// ❌ Do NOT import Footer here if it's already in Layout
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
 
       <div className="container">
         <div className="card-grid">
-        <div className="hi-card">
-          <h1>
-            Hi, I'm Basant<br /> Taher Jaradat 👋
-          </h1>
-          <h4>Front End Engineer</h4>
-        </div>
+          <div className="hi-card">
+            <h1>
+              Hi, I'm Basant<br /> Taher Jaradat 👋
+            </h1>
+            <h4>Front End Engineer</h4>
+          </div>
 
-        <div className="profile-card">
-          <img src="/images/profile.png" className="profile-img" alt="Profile" />
-        </div>
+          <div className="profile-card">
+            <img src="/images/profile.png" className="profile-img" alt="Profile" />
+          </div>
 
-        <div className="skills-card">
+          <div className="skills-card">
             <span className="skills-icon">
               <FontAwesomeIcon icon={faUser} />
             </span>
-           <h4>Skills</h4>
-          <ul className="skills-list">
-            <li style={{ color: "green" }}>Teamwork</li>
-            <li style={{ color: "red" }}>Leadership</li>
-            <li style={{ color: "#f57c00" }}>Communication</li>
-            <li style={{ color: "blue" }}>Time Management</li>
-            <li style={{ color: "purple" }}>Problem Solving</li>
-            <li style={{ color: "brown" }}>Continuous Learning</li>
-          </ul>
-        </div>
+            <h4>Skills</h4>
+            <ul className="skills-list">
+              <li style={{ color: "green" }}>Teamwork</li>
+              <li style={{ color: "red" }}>Leadership</li>
+              <li style={{ color: "#f57c00" }}>Communication</li>
+              <li style={{ color: "blue" }}>Time Management</li>
+              <li style={{ color: "purple" }}>Problem Solving</li>
+              <li style={{ color: "brown" }}>Continuous Learning</li>
+            </ul>
+          </div>
 
-        <div className="exp-card">
-          <span className="bag-icon">
-            <FontAwesomeIcon icon={faShoppingBag} />
-          </span>
-          <h4>Experience</h4>
-          <br />
-          <h1>
-            <strong>Aqlama Company</strong>
-          </h1>
-          <br />
-          <h3>Remote</h3>
-          <h4>Apr 2025 – July 2025</h4>
-        </div>
+          <div className="exp-card">
+            <span className="bag-icon">
+              <FontAwesomeIcon icon={faShoppingBag} />
+            </span>
+            <h4>Experience</h4>
+            <br />
+            <h1><strong>Aqlama Company</strong></h1>
+            <br />
+            <h3>Remote</h3>
+            <h4>Apr 2025 – July 2025</h4>
+          </div>
 
-        <div className="ed-card">
-          <span className="bag-icon">
-            <FontAwesomeIcon icon={faGraduationCap} />
-          </span>
-          <h4>Education</h4>
-          <br />
-          <h1>
-            <strong>Arab American University</strong>
-          </h1>
-          <h3>Computer Systems Engineering</h3>
+          <div className="ed-card">
+            <span className="bag-icon">
+              <FontAwesomeIcon icon={faGraduationCap} />
+            </span>
+            <h4>Education</h4>
+            <br />
+            <h1><strong>Arab American University</strong></h1>
+            <h3>Computer Systems Engineering</h3>
+          </div>
         </div>
       </div>
-       </div>
+
       <div className="search-box">
         🔍
         <h1>Basant Jaradat</h1>
@@ -90,7 +86,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <Footer />
-    </div>
+    </>
   );
-};
+}
