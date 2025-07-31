@@ -7,18 +7,6 @@ import Link from 'next/link';
 const Contact = () => {
   return (
     <>
-      <div className="navbar-box">
-        <span>BASANT JARADAT PORTFOLIO</span>
-        <div className="menu">
-          <Link href="/">HOME</Link>
-          <Link href="/about">ABOUT ME</Link>
-          <Link href="/contact">CONTACT</Link>
-        </div>
-        <a className="download" href="/basant-jaradat-CV.pdf" download>
-          Download CV
-        </a>
-      </div>
-
       <div className="contact-container">
         <h2 className="contact-title">Contact Me</h2>
         <div className="contact-box">
