@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <>
-      <style jsx>{
+      <style jsx>{`
         .footer {
           width: 100%;
           background-color: #ffe6c2;
@@ -41,7 +41,7 @@ const Footer = () => {
         .footer-icons a:hover {
           color: #2563eb;
         }
-      }</style>
+      `}</style>
 
       <footer className="footer">
         <p className="footer-text">© 2025 Basant Taher Jaradat. All rights reserved.</p>
