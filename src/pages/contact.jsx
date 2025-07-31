@@ -66,7 +66,6 @@ const Contact = () => {
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </div>
-            </footer>
     </div>
   );
 };
