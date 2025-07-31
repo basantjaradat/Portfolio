@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "./Footer";
-import Navbar from "./Navbar"; // if you're using one
+import Navbar from "./Navbar"; // Optional
 
 const Layout = ({ children }) => {
   return (
     <div className="layout-wrapper">
-      {/* Optional: Navbar */}
-      <main className="layout-content">
+      {/* Optional Navbar */}
+      <main className="layout-content responsive-container">
         {children}
       </main>
       <Footer />
@@ -30,7 +30,14 @@ const Layout = ({ children }) => {
 
         .layout-content {
           flex: 1;
-          padding: 2rem;
+          padding: 2rem 1rem;
+        }
+
+        /* Reuse from global.css */
+        .responsive-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          width: 100%;
         }
       `}</style>
     </div>
