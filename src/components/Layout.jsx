@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import Navbar from "./Navbar"; // if used
+import Navbar from "./Navbar"; // if you use it
 
 const Layout = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <main className="layout-content">
-        <div className="page-container">
+        <div className="container">
           {children}
         </div>
       </main>
@@ -32,11 +32,9 @@ const Layout = ({ children }) => {
 
         .layout-content {
           flex: 1;
-          display: flex;
-          flex-direction: column;
         }
 
-        .page-container {
+        .container {
           max-width: 1200px;
           margin: 0 auto;
           width: 100%;
