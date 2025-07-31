@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <style jsx>{`
         .footer {
-          width: 100%;
+          width: 100vw;
           background-color: #ffe6c2;
           padding: 1rem 2rem;
           display: flex;
