@@ -8,7 +8,9 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <main className="layout-content">
-        {children}
+        <div className="page-container">
+          {children}
+        </div>
       </main>
 
       <Footer />
@@ -34,8 +36,7 @@ const Layout = ({ children }) => {
           flex-direction: column;
         }
 
-        /* Keep page content centered as you wanted */
-        .layout-content > * {
+        .page-container {
           max-width: 1200px;
           margin: 0 auto;
           width: 100%;
