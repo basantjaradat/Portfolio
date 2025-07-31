@@ -3,13 +3,10 @@ import projects from "../data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       <div className="container">
         <div className="card-grid">
           <div className="hi-card">
