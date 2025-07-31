@@ -51,23 +51,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <footer className="footer">
-        <p className="footer-text">
-          © 2025 Basant Taher Jaradat. All rights reserved.
-        </p>
-        <div className="footer-icons">
-          <a
-            href="https://github.com/basantjaradat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="mailto:jaradatpasant@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-        </div>
+    </>
   );
 };
 
