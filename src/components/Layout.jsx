@@ -1,15 +1,17 @@
 import React from "react";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar"; // if you use it
 
 const Layout = ({ children }) => {
   return (
     <div className="layout-wrapper">
-      <main className="layout-content responsive-container">
-        {children}
-      </main>
+      {/* Optional Navbar */}
+      <Navbar />
 
-      <div className="responsive-container">
+      <div className="container">
+        <main className="layout-content">
+          {children}
+        </main>
         <Footer />
       </div>
 
@@ -29,16 +31,15 @@ const Layout = ({ children }) => {
           width: 100%;
         }
 
-        .layout-content {
-          flex: 1;
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
           width: 100%;
           padding: 2rem 1rem;
         }
 
-        .responsive-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          width: 100%;
+        .layout-content {
+          flex: 1;
         }
       `}</style>
     </div>
