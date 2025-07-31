@@ -1,52 +1,21 @@
-/* src/styles/global.css */
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+/* global.css */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #fef3e7;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #fefefe;
-  color: #222;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
-}
-
-/* Images scale properly */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive typography */
-h1 {
-  font-size: 2rem;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Utility container class you can use freely */
-.responsive-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/* Flex helper (optional) */
-.flex-wrap {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsive-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
 }
