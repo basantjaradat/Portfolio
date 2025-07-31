@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+
 
 export default function Home() {
   return (
@@ -88,6 +90,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
