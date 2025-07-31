@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
 import { profileData } from "../data/profile";
 
 const About = () => {
@@ -8,8 +6,6 @@ const About = () => {
 
   return (
     <div>
-      <Navbar />
-
       <div className="profile-container">
         <section className="about-section">
           <h2>About Me</h2>
