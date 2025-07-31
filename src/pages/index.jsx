@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Navbar from "../components/Navbar";
-// ❌ Do NOT import Footer here if it's already in Layout
 
 export default function Home() {
   return (
