@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./Footer"; 
-import Navbar from "./Navbar"; 
+import Footer from "./Footer";
+import Navbar from "./Navbar"; // if you're using one
 
 const Layout = ({ children }) => {
   return (
@@ -12,9 +12,14 @@ const Layout = ({ children }) => {
       <Footer />
 
       <style jsx global>{`
-        html, body, #__next {
+        html,
+        body,
+        #__next {
           height: 100%;
           margin: 0;
+          padding: 0;
+          font-family: 'Nunito', sans-serif;
+          background: #fef3e7;
         }
 
         .layout-wrapper {
@@ -25,6 +30,7 @@ const Layout = ({ children }) => {
 
         .layout-content {
           flex: 1;
+          padding: 2rem;
         }
       `}</style>
     </div>
