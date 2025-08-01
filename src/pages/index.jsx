@@ -59,11 +59,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="search-box">
-        🔍
-        <h1>Basant Jaradat</h1>
-      </div>
-
       <div className="project-section">
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
